@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 
 const app = express();
 
-app.set('view engine', 'ejs');
+app.set("view engine", "ejs");
 
 app.get("/", function(req, res){
     
@@ -37,7 +37,7 @@ app.get("/", function(req, res){
             console.log("Error: current day is equal to: " + currentDay);
     }
     res.render("list", {
-        kindofDay: day
+        kindOfDay: day
     });
 });
 
